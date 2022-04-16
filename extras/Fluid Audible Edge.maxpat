@@ -128,7 +128,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "float", "int" ],
 									"patching_rect" : [ 50.0, 139.0, 42.0, 22.0 ],
-									"text" : "t 0.5 0"
+									"text" : "t 0.3 0"
 								}
 
 							}
@@ -288,8 +288,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 612.333343386650085, 489.763428494140612, 263.0, 141.0 ],
-					"text" : "Sometimes we generate a lot of material in our practices with audio samples and particularly field recordings. FluCoMa offers one way of approaching this problem, by analysing sounds according to their 'novelty'. This patch shows one way in which the measuring of novelty can inform aural exploration.",
-					"textcolor" : [ 0.0, 0.0, 0.0, 0.5 ]
+					"text" : "Exploring large banks of sounds without any guidance can sometimes be an arduous process of not finding much that we like. We can harness machine listening and machine learning together to 'map' sounds out into a visual space, facilitating more perceptually grounded exploration.",
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.3 ]
 				}
 
 			}
@@ -320,10 +320,22 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 1,
+						"count" : 4,
 						"data" : [ 							{
 								"key" : 0,
 								"value" : [ "Sometimes we generate a lot of material in our practices with audio samples and particularly field recordings. FluCoMa offers one way of approaching this problem, by analysing sounds according to their 'novelty'. This patch shows one way in which the measuring of novelty can inform aural exploration." ]
+							}
+, 							{
+								"key" : 1,
+								"value" : [ "The computer is a great tool for automatically chopping up sounds. Let's see how 'novelty' can inform the computer's choices on this matter and segment some sounds for us!" ]
+							}
+, 							{
+								"key" : 2,
+								"value" : [ "Unsupervised machine learning generally refers to a process of 'oi algorithm! chew on this data and tell me what you find!' Let's see how that can apply to the decomposition of sounds." ]
+							}
+, 							{
+								"key" : 3,
+								"value" : [ "Exploring large banks of sounds without any guidance can sometimes be an arduous process of not finding much that we like. We can harness machine listening and machine learning together to 'map' sounds out into a visual space, facilitating more perceptually grounded exploration." ]
 							}
  ]
 					}
@@ -364,7 +376,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 462.999970674514771, 197.999991655349731, 251.0, 28.0 ],
-					"text" : "Applications of FluCoMa"
+					"text" : "FluCoMa in Practice"
 				}
 
 			}
@@ -381,11 +393,11 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 462.999970674514771, 227.999991655349731, 251.0, 61.967742999999984 ],
+					"patching_rect" : [ 462.999970674514771, 227.999991655349731, 251.0, 103.967742999999984 ],
 					"spacing_x" : 1.0,
 					"spacing_y" : 24.0,
 					"tabcolor" : [ 0.012, 0.447, 0.71, 0.5 ],
-					"tabs" : [ "Exporing Sounds With Novelty" ]
+					"tabs" : [ "Exporing Sounds With Novelty", "Slicing Sounds With Novelty", "Unsupervised Source Separation", "Mapping Sounds In Space" ]
 				}
 
 			}
@@ -447,7 +459,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-24",
@@ -656,7 +667,7 @@
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 4.403228999999996, 393.967743000000041, 251.09677099999999, 74.0 ],
 					"text" : "Separation of a sound based on finding a 'harmonic' and 'percussive' component. Almost exactly what it says on the tin!",
-					"textcolor" : [ 0.0, 0.0, 0.0, 0.5 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.3 ]
 				}
 
 			}
