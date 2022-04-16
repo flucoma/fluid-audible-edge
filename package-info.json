@@ -1,0 +1,24 @@
+{
+	"author" : "FluCoMa",
+	"description" : "Patchers and helpers for the Fluid Audible Edge",
+	"homepatcher" : "Fluid Audible Edge.maxpat",
+	"max_version_min" : "7.0",
+	"name" : "FluidAudibleEdge",
+	"os" : {
+		"macintosh" : {
+			"platform" : [ "arm64", "x64" ],
+			"min_version" : "10.7"
+		},
+		"windows" : {
+			"platform" : [ "x64" ],
+			"min_version" : "10"
+		}
+	},
+	"package_extra" : {
+		"reverse_domain" : "org.flucoma",
+		"copyright" : "Copyright (c) 2017-21 University of Huddersfield"
+	},
+	"tags" : [ "decomposition", "analysis"      ],
+	"version" : "1.0.0",
+	"website" : "http://www.github.com/flucoma/"
+}
