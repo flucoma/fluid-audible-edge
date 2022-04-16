@@ -195,7 +195,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 10.0, 60.0, 271.0, 20.0 ],
-					"presentation_linecount" : 2,
 					"text" : "A wrapper around the fluid.audiotransport~ object",
 					"textcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ]
 				}
