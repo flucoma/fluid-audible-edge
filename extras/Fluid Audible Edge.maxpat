@@ -40,6 +40,42 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Lato",
+					"fontsize" : 11.0,
+					"id" : "obj-35",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 33.0, 294.0, 142.0, 46.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 295.999970674514771, 248.0, 255.0, 33.0 ],
+					"text" : "A suite of larger patches that we'll discuss together in the workshop.",
+					"textcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Lato",
+					"fontsize" : 11.0,
+					"id" : "obj-34",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 18.0, 279.0, 142.0, 59.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 12.5, 248.0, 255.0, 33.0 ],
+					"text" : "A buffet of algorithms from the toolkit wrapped up in a rapidly usable GUI interface.",
+					"textcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -60,7 +96,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.999970674514771, 156.0, 809.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.5, 217.0, 842.0, 18.0 ],
+					"presentation_rect" : [ 12.5, 190.0, 842.0, 18.0 ],
 					"saved_attribute_attributes" : 					{
 						"linecolor" : 						{
 							"expression" : ""
@@ -334,15 +370,15 @@
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
 					"id" : "obj-3",
-					"linecount" : 8,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 612.333343386650085, 489.763428494140612, 263.0, 141.0 ],
+					"patching_rect" : [ 612.333343386650085, 489.763428494140612, 263.0, 90.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 8,
-					"presentation_rect" : [ 295.999970674514771, 471.967743000000041, 251.0, 141.0 ],
-					"text" : "Exploring large banks of sounds without any guidance can sometimes be an arduous process of not finding much that we like. We can harness machine listening and machine learning together to 'map' sounds out into a visual space, facilitating more perceptually grounded exploration.",
+					"presentation_linecount" : 6,
+					"presentation_rect" : [ 295.999970674514771, 478.967743000000041, 251.0, 107.0 ],
+					"text" : "Unsupervised machine learning generally refers to processes where we throw unlabelled data at the computer to see what it finds. Let's see how that can apply to the decomposition of sounds.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.3 ]
 				}
 
@@ -385,7 +421,7 @@
 							}
 , 							{
 								"key" : 2,
-								"value" : [ "Unsupervised machine learning generally refers to a process of 'oi algorithm! chew on this data and tell me what you find!' Let's see how that can apply to the decomposition of sounds." ]
+								"value" : [ "Unsupervised machine learning generally refers to processes where we throw unlabelled data at the computer to see what it finds. Let's see how that can apply to the decomposition of sounds." ]
 							}
 , 							{
 								"key" : 3,
@@ -432,9 +468,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 462.999970674514771, 197.999991655349731, 255.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 295.999970674514771, 246.0, 251.0, 28.0 ],
-					"text" : "FluCoMa in Practice",
-					"textjustification" : 1
+					"presentation_rect" : [ 295.999970674514771, 218.0, 251.0, 28.0 ],
+					"text" : "FluCoMa in Practice"
 				}
 
 			}
@@ -453,7 +488,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 462.999970674514771, 227.999991655349731, 251.0, 103.967742999999984 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 295.999970674514771, 276.0, 251.0, 190.967743000000041 ],
+					"presentation_rect" : [ 295.999970674514771, 283.0, 251.0, 190.967743000000041 ],
 					"spacing_x" : 1.0,
 					"spacing_y" : 24.0,
 					"tabcolor" : [ 0.012, 0.447, 0.71, 0.5 ],
@@ -722,10 +757,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 164.333343386650085, 489.763428494140612, 263.0, 74.0 ],
+					"patching_rect" : [ 164.333343386650085, 489.763428494140612, 265.0, 74.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 12.403228999999996, 471.967743000000041, 254.0, 74.0 ],
+					"presentation_rect" : [ 12.403228999999996, 478.967743000000041, 254.0, 74.0 ],
 					"text" : "A powerful tool for morphing between two sounds. It tries to interpolate between the spectra of two sounds using the optimal transport algorithm.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.3 ]
 				}
@@ -816,7 +851,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.999970674514771, 197.999991655349731, 255.0, 28.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.5, 246.0, 255.0, 28.0 ],
+					"presentation_rect" : [ 12.5, 218.0, 255.0, 28.0 ],
 					"text" : "Decomposition and Separation",
 					"textjustification" : 1
 				}
@@ -837,7 +872,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 14.999970674514771, 227.999991655349731, 168.333372712135315, 119.967742999999984 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.5, 276.0, 251.0, 190.967743000000041 ],
+					"presentation_rect" : [ 12.5, 283.0, 251.0, 190.967743000000041 ],
 					"spacing_x" : 1.0,
 					"spacing_y" : 24.0,
 					"tabcolor" : [ 0.012, 0.447, 0.71, 0.5 ],
@@ -1040,14 +1075,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "ae.png",
-				"bootpath" : "~/Documents/Max 8/Packages/FluidAudibleEdge",
-				"patcherrelativepath" : "..",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "max6box",
