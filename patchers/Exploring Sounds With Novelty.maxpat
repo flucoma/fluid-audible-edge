@@ -12,7 +12,7 @@
 		"classnamespace" : "box",
 		"rect" : [ 35.0, 88.0, 1370.0, 777.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -40,84 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-48",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 973.0, 406.0, 50.0, 22.0 ],
-					"text" : "0.1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"contdata" : 1,
-					"id" : "obj-41",
-					"maxclass" : "multislider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"orientation" : 0,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 924.0, 355.0, 610.0, 23.0 ],
-					"setminmax" : [ 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"contdata" : 1,
-					"id" : "obj-38",
-					"maxclass" : "multislider",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 628.5, 355.0, 20.0, 140.0 ],
-					"setminmax" : [ 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"format" : 6,
-					"id" : "obj-24",
-					"maxclass" : "flonum",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 732.0, 236.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-37",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 702.0, 291.0, 79.0, 22.0 ],
-					"text" : "offset $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-5",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 611.0, 291.0, 55.0, 22.0 ],
-					"text" : "zoom $1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontface" : 1,
 					"fontname" : "Lato",
 					"fontsize" : 22.0,
@@ -143,7 +65,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1036.0, 81.5, 210.0, 235.0 ],
+					"patching_rect" : [ 874.0, 63.5, 210.0, 235.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 19.0, 271.0, 304.0, 83.0 ],
 					"text" : "To use the patch drag and drop an audio file on to the \"drop zone\". This will trigger processing that generates a measure of novelty across the whole audio file. Using your mouse, you can click and drag across the waveform view to audition different two second moments in time."
@@ -161,7 +83,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 643.0, 359.0, 210.0, 235.0 ],
+					"patching_rect" : [ 663.0, 359.0, 210.0, 235.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 331.0, 205.0, 605.0, 83.0 ],
 					"text" : "The white waveform is your audio. The aqua coloured curve drawn on top of it describes the change in <i>novelty</i> from moment to moment. Peaks in this curve (bits that poke out from the average) indicate that something is novel at that point in time, given what happens within a window around it.\n\nWe can alter the size of this window around any given point with the \"kernel\" dial. You might like to think of this as a <i>context</i> parameter, and changes how much time the algorithm considers when it makes an assessment of novelty.\n\n"
@@ -372,7 +294,7 @@
 					"orientation" : 0,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 233.0, 321.0, 165.0, 19.0 ],
+					"patching_rect" : [ 236.5, 321.0, 165.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 19.0, 193.0, 178.0, 10.0 ],
 					"setminmax" : [ 0.0, 1.0 ]
@@ -951,13 +873,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
 					"source" : [ "obj-25", 0 ]
 				}
@@ -1047,20 +962,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-39", 0 ]
 				}
@@ -1077,22 +978,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-42", 0 ],
 					"source" : [ "obj-40", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"order" : 1,
-					"source" : [ "obj-41", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-48", 1 ],
-					"order" : 0,
-					"source" : [ "obj-41", 0 ]
 				}
 
 			}
@@ -1117,13 +1002,6 @@
 					"destination" : [ "obj-32", 0 ],
 					"order" : 1,
 					"source" : [ "obj-47", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-5", 0 ]
 				}
 
 			}
@@ -1162,7 +1040,7 @@
 , 			{
 				"name" : "fluid.waveform~.js",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/jsui",
-				"patcherrelativepath" : "../../../Documents/Max 8/Packages/FluidCorpusManipulation/jsui",
+				"patcherrelativepath" : "../../FluidCorpusManipulation/jsui",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
