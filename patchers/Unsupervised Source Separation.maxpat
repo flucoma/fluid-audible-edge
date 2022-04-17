@@ -145,7 +145,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 724.0, 52.5, 463.0, 50.0 ],
-									"presentation_linecount" : 4,
 									"text" : "This second part uses the single spectral template from the left hand side of the patch to \"seed\" fluid.bufnmf~. We would hope that by seeding it, it will more easily find a component within another sound that it has learned from the first sound.",
 									"textcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ]
 								}
@@ -173,12 +172,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-66",
-									"linecount" : 8,
+									"linecount" : 7,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "float", "" ],
-									"patching_rect" : [ 786.0, 316.5, 128.0, 116.0 ],
+									"patching_rect" : [ 786.0, 316.5, 131.0, 102.0 ],
 									"text" : "fluid.bufnmf~ @source mixed @components 2 @bases learnedbases @resynth result @basesmode 1 @numchans 1 @blocking 0"
 								}
 
@@ -841,7 +840,6 @@
 					}
 ,
 					"patching_rect" : [ 266.0, 59.0, 213.0, 22.0 ],
-					"presentation_linecount" : 2,
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
