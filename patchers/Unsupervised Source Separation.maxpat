@@ -57,7 +57,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 35.0, 114.0, 1370.0, 751.0 ],
+						"rect" : [ 0.0, 26.0, 1370.0, 751.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -88,13 +88,29 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"bgcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
+									"ghostbar" : 100,
+									"id" : "obj-71",
+									"maxclass" : "multislider",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"orientation" : 0,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 840.5, 445.5, 165.0, 19.0 ],
+									"setminmax" : [ 0.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-28",
 									"maxclass" : "toggle",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 831.5, 451.221484741398854, 24.0, 24.0 ]
+									"patching_rect" : [ 831.5, 492.942969482797707, 24.0, 24.0 ]
 								}
 
 							}
@@ -105,7 +121,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "bang" ],
-									"patching_rect" : [ 831.5, 488.221484741398854, 70.0, 22.0 ],
+									"patching_rect" : [ 831.5, 529.942969482797707, 70.0, 22.0 ],
 									"text" : "play~ result"
 								}
 
@@ -116,7 +132,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 724.0, 531.578514912894207, 45.0, 45.0 ]
+									"patching_rect" : [ 724.0, 573.29999965429306, 45.0, 45.0 ]
 								}
 
 							}
@@ -157,13 +173,13 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-66",
-									"linecount" : 7,
+									"linecount" : 8,
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "float", "" ],
-									"patching_rect" : [ 786.0, 316.5, 128.0, 102.0 ],
-									"text" : "fluid.bufnmf~ @source mixed @components 2 @bases learnedbases @resynth result @basesmode 1 @numchans 1"
+									"patching_rect" : [ 786.0, 316.5, 128.0, 116.0 ],
+									"text" : "fluid.bufnmf~ @source mixed @components 2 @bases learnedbases @resynth result @basesmode 1 @numchans 1 @blocking 0"
 								}
 
 							}
@@ -200,8 +216,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 733.5, 153.5, 159.0, 21.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 43.5, 128.5, 159.0, 21.0 ],
 									"text" : "Drop an audio file here",
 									"textjustification" : 1
 								}
@@ -215,8 +229,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 724.0, 107.5, 178.0, 113.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 34.0, 72.0, 178.0, 134.0 ],
 									"rounded" : 0.0
 								}
 
@@ -549,7 +561,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 724.0, 451.221484741398854, 24.0, 24.0 ]
+									"patching_rect" : [ 724.0, 492.942969482797707, 24.0, 24.0 ]
 								}
 
 							}
@@ -560,7 +572,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "signal", "bang" ],
-									"patching_rect" : [ 724.0, 488.221484741398854, 82.0, 22.0 ],
+									"patching_rect" : [ 724.0, 529.942969482797707, 82.0, 22.0 ],
 									"text" : "play~ isolated"
 								}
 
@@ -575,9 +587,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 19.0, 12.0, 346.0, 33.0 ],
-									"presentation" : 1,
-									"presentation_linecount" : 2,
-									"presentation_rect" : [ 19.0, 10.0, 326.0, 59.0 ],
 									"text" : "Helping NMF Find Specific Sounds"
 								}
 
@@ -594,8 +603,6 @@
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 492.0, 414.642968696016396, 165.0, 19.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 19.0, 193.0, 178.0, 10.0 ],
 									"setminmax" : [ 0.0, 1.0 ]
 								}
 
@@ -633,8 +640,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 28.5, 153.5, 159.0, 21.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 28.5, 113.5, 159.0, 21.0 ],
 									"text" : "Drop an audiofile here",
 									"textjustification" : 1
 								}
@@ -648,8 +653,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 19.0, 107.5, 178.0, 113.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 19.0, 57.0, 178.0, 134.0 ],
 									"rounded" : 0.0
 								}
 
@@ -767,6 +770,13 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-71", 0 ],
+									"source" : [ "obj-66", 1 ]
+								}
+
+							}
  ],
 						"styles" : [ 							{
 								"name" : "helpfile_label-1",
@@ -860,7 +870,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1370.0, 751.0 ],
+						"rect" : [ 35.0, 114.0, 1370.0, 751.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
