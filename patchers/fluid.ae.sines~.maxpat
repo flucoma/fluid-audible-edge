@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 478.0, 10.0, 70.0, 22.0 ],
+					"text" : "loadmess 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 344.0, 10.0, 81.0, 22.0 ],
+					"text" : "loadmess -24"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -192,7 +216,7 @@
 					"patching_rect" : [ 124.0, 130.5, 142.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 360.0, 135.0, 17.0 ],
-					"text" : "Latency: 496"
+					"text" : "Latency: 304"
 				}
 
 			}
@@ -332,9 +356,11 @@
 					"presentation_rect" : [ 20.0, 20.0, 120.0, 69.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 3 ],
+							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.dial[1]",
 							"parameter_mmax" : 51.0,
-							"parameter_mmin" : 3.0,
+							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "Minimum Track Length",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
@@ -362,6 +388,8 @@
 					"presentation_rect" : [ 20.0, 100.0, 120.0, 69.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ -24 ],
+							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.dial",
 							"parameter_mmax" : 0.0,
 							"parameter_mmin" : -90.0,
@@ -434,6 +462,20 @@
 					"destination" : [ "obj-17", 0 ],
 					"midpoints" : [ 54.5, 278.0, 163.5, 278.0 ],
 					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
