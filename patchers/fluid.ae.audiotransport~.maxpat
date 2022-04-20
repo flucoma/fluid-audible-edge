@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 88.0, 868.0, 777.0 ],
+		"rect" : [ 35.0, 88.0, 1370.0, 777.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -66,7 +66,7 @@
 				"box" : 				{
 					"comment" : "audio input b",
 					"id" : "obj-37",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -151,7 +151,8 @@
 							"parameter_longname" : "live.dial[1]",
 							"parameter_mmax" : 4,
 							"parameter_shortname" : "Spectral Setting",
-							"parameter_type" : 2
+							"parameter_type" : 2,
+							"parameter_unitstyle" : 9
 						}
 
 					}
@@ -167,7 +168,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 24.0, 351.600004732608795, 111.0, 22.0 ],
+					"patching_rect" : [ 24.0, 428.600004732608795, 111.0, 22.0 ],
 					"text" : "delay~ 96000 4410"
 				}
 
@@ -179,7 +180,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 160.0, 70.0, 186.0, 22.0 ],
+					"patching_rect" : [ 146.0, 70.0, 186.0, 22.0 ],
 					"text" : "combine \"Latency: \" i @triggers 1"
 				}
 
@@ -191,7 +192,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 160.0, 105.0, 72.0, 22.0 ],
+					"patching_rect" : [ 146.0, 105.0, 72.0, 22.0 ],
 					"text" : "prepend set"
 				}
 
@@ -204,7 +205,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 160.0, 139.5, 142.0, 17.0 ],
+					"patching_rect" : [ 146.0, 139.5, 142.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 212.0, 135.0, 17.0 ],
 					"text" : "Latency: 256"
@@ -246,7 +247,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 24.0, 282.0, 136.0, 41.0 ],
+					"patching_rect" : [ 24.0, 359.0, 136.0, 41.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 26.0, 19.0, 108.0, 41.0 ],
 					"saved_attribute_attributes" : 					{
@@ -269,11 +270,11 @@
 				"box" : 				{
 					"comment" : "audio output",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 407.0, 30.0, 30.0 ]
+					"patching_rect" : [ 24.0, 484.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -312,7 +313,7 @@
 				"box" : 				{
 					"comment" : "audio input a",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -328,7 +329,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 24.0, 233.0, 118.0, 22.0 ],
+					"patching_rect" : [ 24.0, 310.0, 118.0, 22.0 ],
 					"text" : "fluid.audiotransport~"
 				}
 
@@ -345,7 +346,7 @@
 					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 24.0, 444.199999988079071, 128.0, 128.0 ],
+					"patching_rect" : [ 610.0, 740.0, 26.0, 25.800000011920929 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 10.0, 140.0, 200.0 ],
 					"proportion" : 0.5,
@@ -357,7 +358,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
-					"midpoints" : [ 33.5, 256.0, 33.5, 256.0 ],
+					"midpoints" : [ 33.5, 333.0, 33.5, 333.0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -393,7 +394,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 357.5, 220.0, 33.5, 220.0 ],
+					"midpoints" : [ 357.5, 219.0, 33.5, 219.0 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -401,7 +402,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 139.0, 220.0, 33.5, 220.0 ],
+					"midpoints" : [ 139.0, 297.0, 33.5, 297.0 ],
 					"source" : [ "obj-26", 1 ]
 				}
 
@@ -409,7 +410,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 1 ],
-					"midpoints" : [ 106.5, 220.0, 12.0, 220.0, 12.0, 337.0, 125.5, 337.0 ],
+					"midpoints" : [ 106.5, 297.0, 171.0, 297.0, 171.0, 414.0, 125.5, 414.0 ],
 					"order" : 1,
 					"source" : [ "obj-26", 0 ]
 				}
@@ -418,7 +419,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 1 ],
-					"midpoints" : [ 106.5, 55.0, 336.5, 55.0 ],
+					"midpoints" : [ 106.5, 55.0, 322.5, 55.0 ],
 					"order" : 0,
 					"source" : [ "obj-26", 0 ]
 				}
@@ -456,7 +457,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
-					"midpoints" : [ 502.5, 220.0, 33.5, 220.0 ],
+					"midpoints" : [ 502.5, 219.0, 33.5, 219.0 ],
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -464,7 +465,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 1 ],
-					"midpoints" : [ 68.5, 219.0, 132.5, 219.0 ],
+					"midpoints" : [ 68.5, 297.0, 132.5, 297.0 ],
 					"source" : [ "obj-37", 0 ]
 				}
 
@@ -484,23 +485,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-12" : [ "live.dial[1]", "Spectral Setting", 0 ],
-			"obj-16" : [ "live.gain~", "Morph", 0 ],
-			"obj-33" : [ "live.dial", "Interpolation", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "fluid.audiotransport~.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "helpfile_label-1",
 				"default" : 				{

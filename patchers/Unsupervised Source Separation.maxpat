@@ -177,7 +177,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "float", "" ],
-									"patching_rect" : [ 786.0, 316.5, 131.0, 102.0 ],
+									"patching_rect" : [ 786.0, 316.5, 135.0, 102.0 ],
 									"text" : "fluid.bufnmf~ @source mixed @components 2 @bases learnedbases @resynth result @basesmode 1 @numchans 1 @blocking 0"
 								}
 
