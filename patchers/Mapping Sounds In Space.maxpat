@@ -223,8 +223,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 760.0, 351.333341121673584, 280.0, 64.0 ],
-					"presentation_linecount" : 5,
+					"patching_rect" : [ 760.0, 351.333341121673584, 282.0, 64.0 ],
 					"text" : "This bit of patching down here takes care of looking up the nearest slice to wherever your mouse is. It uses a fluid.kdtree~ to do this (which we'll talk about more in the workshop)."
 				}
 
@@ -237,8 +236,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 900.0, 128.166643395000392, 233.0, 150.0 ],
-					"presentation_linecount" : 10,
+					"patching_rect" : [ 900.0, 128.166643395000392, 236.0, 150.0 ],
 					"text" : "This is a visual representation of the data that UMAP produces, allowing us to visually explore each slice in our larger corpus. Ideally, the space is perceptually meaningful but that is not a guarantee. We can tinker with the UMAP algorithm parameters to make it respect the overall perceptual smoothness of the whole space or conversely smaller local neighbourhoods."
 				}
 
@@ -251,8 +249,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 230.0, 580.0, 230.0, 122.0 ],
-					"presentation_linecount" : 12,
+					"patching_rect" : [ 230.0, 580.0, 234.0, 122.0 ],
 					"text" : "This block performs a sort of \"data compression\" across all the data for the analysed segments.  It does this using an algorithm called \"UMAP\". The result is that instead of having many feature values describing each segment we can have just 2 in this case. This is convenient for mapping out each segment into space."
 				}
 
@@ -266,7 +263,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 230.0, 370.0, 230.0, 78.0 ],
-					"presentation_linecount" : 7,
 					"text" : "In this block, each slice is individually analysed with a selected audio descriptor. This is the computer's \"listening\" to the sound, in which it can ascribe some features to each segment."
 				}
 
@@ -279,8 +275,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 230.0, 210.0, 161.0, 64.0 ],
-					"presentation_linecount" : 4,
+					"patching_rect" : [ 230.0, 210.0, 164.0, 64.0 ],
 					"text" : "This block uses fluid.bufnoveltyslice~ to slice up the big buffer of audio created just before."
 				}
 
@@ -293,7 +288,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 230.0, 20.0, 160.0, 122.0 ],
+					"patching_rect" : [ 230.0, 20.0, 161.0, 122.0 ],
 					"text" : "This \"block\" loads a folder of sound files into a single buffer by concatenating (or stitching) them together. This makes it simpler to deal with as a \"corpus\", especially in the next stage where we slice it."
 				}
 
@@ -388,7 +383,7 @@
 									"patching_rect" : [ 70.0, 540.0, 90.0, 17.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 172.0, 135.0, 17.0 ],
-									"text" : "Loaded 321 sounds"
+									"text" : "Loaded 33 sounds"
 								}
 
 							}
@@ -1673,7 +1668,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 3,
 													"outlettype" : [ "bang", "float", "" ],
-													"patching_rect" : [ 265.999998686534866, 81.0, 117.999999999999943, 49.0 ],
+													"patching_rect" : [ 265.999998686534866, 81.0, 118.0, 49.0 ],
 													"text" : "fluid.bufchroma~ 12 @features features @numchroma 12"
 												}
 
@@ -1982,7 +1977,7 @@
 									"patching_rect" : [ 495.999993432674216, 430.0, 90.0, 17.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.000001313465134, 173.0, 135.0, 17.0 ],
-									"text" : "Processed 72 slices"
+									"text" : "Processed 824 slices"
 								}
 
 							}
@@ -2182,15 +2177,15 @@
 									"fontname" : "Lato",
 									"fontsize" : 12.0,
 									"id" : "obj-57",
-									"linecount" : 3,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 73.99999868653488, 555.5, 253.0, 50.0 ],
+									"patching_rect" : [ 73.99999868653488, 555.5, 253.0, 64.0 ],
 									"presentation" : 1,
-									"presentation_linecount" : 4,
-									"presentation_rect" : [ 10.000001313465134, 55.5, 180.0, 64.0 ],
-									"text" : "The raw spectrum. Produces a lot of data, so takes longer to process but can capture important details other descriptors might lose.",
+									"presentation_linecount" : 5,
+									"presentation_rect" : [ 10.000001313465134, 55.5, 180.0, 78.0 ],
+									"text" : "Mel-frequency cepstral coefficients. A perceptually relevant and very compressed representation of the spectrum. Good for a wide variety of sounds.",
 									"textcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ]
 								}
 
@@ -2908,7 +2903,7 @@
 									"patching_rect" : [ 55.00000131346512, 427.5, 142.0, 17.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 113.0, 135.0, 17.0 ],
-									"text" : "Created 74 slices"
+									"text" : "Created 826 slices"
 								}
 
 							}
@@ -3494,7 +3489,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 333.0, 528.5, 172.0, 87.0 ],
-									"presentation_linecount" : 6,
 									"text" : "Using some mc (multichannel) magic, we get a cheap and cheerful polyphonic playback mechanism for listening to the slices as we move our mouse around the space.",
 									"textcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ]
 								}
@@ -3508,7 +3502,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 173.0, 255.0, 102.0, 114.0 ],
-									"presentation_linecount" : 4,
 									"text" : "Formats the right message for the mc.play~ object. Follows the convention of <starttime> <endtime> <duration>",
 									"textcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ]
 								}
@@ -3522,7 +3515,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 376.0, 138.0, 170.0, 60.0 ],
-									"presentation_linecount" : 7,
 									"text" : "Slightly tedious patching, but converts the start and end of slice times and converts them into milliseconds.",
 									"textcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ]
 								}
