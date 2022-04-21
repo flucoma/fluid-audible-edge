@@ -137,7 +137,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 633.0, 150.0, 20.0, 20.0 ],
+					"patching_rect" : [ 611.0, 148.0, 20.0, 20.0 ],
 					"rounded" : 60.0,
 					"text" : "2",
 					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ]
@@ -151,7 +151,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 460.0, 148.0, 166.0, 24.0 ],
+					"patching_rect" : [ 460.0, 148.0, 149.0, 24.0 ],
 					"text" : "Play two audio sources"
 				}
 
