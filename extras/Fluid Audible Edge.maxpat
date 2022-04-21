@@ -66,16 +66,16 @@
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "color",
 					"fontname" : "Lato",
-					"fontsize" : 12.0,
+					"fontsize" : 14.0,
 					"gradient" : 1,
 					"id" : "obj-25",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 14.999970674514771, 702.0, 212.0, 23.0 ],
+					"patching_rect" : [ 14.999970674514771, 702.0, 246.0, 25.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.403228999999996, 702.0, 212.0, 23.0 ],
+					"presentation_rect" : [ 17.90322900000001, 711.5, 246.0, 25.0 ],
 					"text" : "James Bradbury: j.bradbury@hud.ac.uk",
 					"textcolor" : [ 0.32156862745098, 0.549019607843137, 0.792156862745098, 1.0 ]
 				}
@@ -144,7 +144,7 @@
 					"presentation_linecount" : 4,
 					"presentation_rect" : [ 547.999970674514771, 478.967743000000041, 251.0, 74.0 ],
 					"text" : "FluCoMa 'Learn'. A website with explanations of algorithms, workflows and deep dives into use cases of FluCoMa from artists.",
-					"textcolor" : [ 0.0, 0.0, 0.0, 0.3 ]
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -1248,15 +1248,15 @@
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
 					"id" : "obj-20",
-					"linecount" : 7,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 164.333343386650085, 489.763428494140612, 265.0, 124.0 ],
+					"patching_rect" : [ 164.333343386650085, 489.763428494140612, 265.0, 74.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 8,
-					"presentation_rect" : [ 12.403228999999996, 478.967743000000041, 257.0, 141.0 ],
-					"text" : "A bit like a de-clicking audio restoriation algorithm. Tries to estimate what will happen next in a sound based on a small window of time. If what actually happens is different enough to this it will isolate that audio as a 'transient' component and isolate everything else as a 'residual'.",
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 12.403228999999996, 478.967743000000041, 257.0, 74.0 ],
+					"text" : "A powerful tool for morphing between two sounds. It tries to interpolate between the spectra of two sounds using the optimal transport algorithm.",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.3 ]
 				}
 
@@ -1444,7 +1444,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 14.999970674514771, 702.0, 212.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 12.403228999999996, 702.0, 212.0, 23.0 ],
+					"presentation_rect" : [ 12.403228999999996, 702.0, 257.0, 44.0 ],
 					"proportion" : 0.5,
 					"rounded" : 10
 				}
