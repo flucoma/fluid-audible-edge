@@ -1426,7 +1426,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 106.0, 640.0, 480.0 ],
+						"rect" : [ 35.0, 114.0, 1370.0, 751.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1455,8 +1455,55 @@
 						"subpatcher_template" : "",
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgcolor" : [ 0.2, 0.2, 0.2, 0.0 ],
+									"buffername" : "src",
+									"gridcolor" : [ 0.349019607843137, 0.349019607843137, 0.349019607843137, 0.0 ],
+									"id" : "obj-4",
+									"maxclass" : "waveform~",
+									"numinlets" : 5,
+									"numoutlets" : 6,
+									"outlettype" : [ "float", "float", "float", "float", "list", "" ],
+									"patching_rect" : [ 30.0, 60.5, 178.0, 113.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 19.0, 57.0, 178.0, 133.0 ],
+									"selectioncolor" : [ 0.929411764705882, 0.929411764705882, 0.352941176470588, 0.0 ],
+									"waveformcolor" : [ 0.423529411764706, 0.513725490196078, 1.0, 1.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 2,
+									"fontname" : "Lato",
+									"id" : "obj-9",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 59.5, 72.5, 119.0, 21.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 48.5, 69.0, 119.0, 21.0 ],
+									"text" : "Drop an audiofile here",
+									"textjustification" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "dropfile",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 30.0, 60.5, 178.0, 113.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 19.0, 57.0, 178.0, 133.0 ],
+									"rounded" : 0.0
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-45",
 									"maxclass" : "newobj",
@@ -1961,36 +2008,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 2,
-									"fontname" : "Lato",
-									"id" : "obj-9",
-									"maxclass" : "comment",
-									"numinlets" : 1,
-									"numoutlets" : 0,
-									"patching_rect" : [ 39.5, 103.0, 159.0, 21.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 28.5, 113.5, 159.0, 21.0 ],
-									"text" : "Drop an audio file here",
-									"textjustification" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "dropfile",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 30.0, 57.0, 178.0, 113.0 ],
-									"presentation" : 1,
-									"presentation_rect" : [ 19.0, 57.0, 178.0, 134.0 ],
-									"rounded" : 0.0
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"bgcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
 									"id" : "obj-50",
 									"maxclass" : "multislider",
@@ -2201,7 +2218,7 @@
 									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 779.0, 94.0, 128.0, 128.0 ],
+									"patching_rect" : [ 833.0, 28.0, 117.0, 113.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 199.0, 57.0, 337.0, 175.0 ],
 									"proportion" : 0.5,

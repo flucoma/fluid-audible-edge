@@ -249,7 +249,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 230.0, 580.0, 234.0, 122.0 ],
+					"patching_rect" : [ 230.0, 620.0, 234.0, 122.0 ],
 					"text" : "This block performs a sort of \"data compression\" across all the data for the analysed segments.  It does this using an algorithm called \"UMAP\". The result is that instead of having many feature values describing each segment we can have just 2 in this case. This is convenient for mapping out each segment into space."
 				}
 
@@ -262,7 +262,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 230.0, 370.0, 230.0, 78.0 ],
+					"patching_rect" : [ 230.0, 410.0, 230.0, 78.0 ],
 					"text" : "In this block, each slice is individually analysed with a selected audio descriptor. This is the computer's \"listening\" to the sound, in which it can ascribe some features to each segment."
 				}
 
@@ -275,7 +275,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 230.0, 210.0, 164.0, 64.0 ],
+					"patching_rect" : [ 230.0, 250.0, 164.0, 64.0 ],
 					"text" : "This block uses fluid.bufnoveltyslice~ to slice up the big buffer of audio created just before."
 				}
 
@@ -350,12 +350,24 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 70.0, 471.0, 29.5, 22.0 ],
+									"text" : "join"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-20",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 70.0, 500.0, 72.0, 22.0 ],
+									"patching_rect" : [ 70.0, 562.0, 72.0, 22.0 ],
 									"text" : "prepend set"
 								}
 
@@ -367,8 +379,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 70.0, 458.0, 107.0, 22.0 ],
-									"text" : "Loaded $1 sounds"
+									"patching_rect" : [ 70.0, 520.0, 151.0, 22.0 ],
+									"text" : "Loaded $1 sounds from $2"
 								}
 
 							}
@@ -377,13 +389,15 @@
 									"fontname" : "Lato",
 									"fontsize" : 9.0,
 									"id" : "obj-116",
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 70.0, 540.0, 90.0, 17.0 ],
+									"patching_rect" : [ 70.0, 602.0, 90.0, 71.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 10.0, 172.0, 135.0, 17.0 ],
-									"text" : "Loaded 33 sounds"
+									"presentation_linecount" : 3,
+									"presentation_rect" : [ 10.0, 172.0, 180.0, 39.0 ],
+									"text" : "Loaded 33 sounds from /Users/james/Documents/Max 8/Packages/FluidAudibleEdge/media"
 								}
 
 							}
@@ -524,7 +538,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 6,
 									"outlettype" : [ "float", "float", "float", "float", "list", "" ],
-									"patching_rect" : [ 250.0, 416.0, 256.0, 64.0 ],
+									"patching_rect" : [ 230.0, 520.0, 256.0, 64.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.0, 130.0, 180.0, 40.0 ],
 									"selectioncolor" : [ 0.929411764705882, 0.929411764705882, 0.352941176470588, 0.0 ]
@@ -633,7 +647,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-19", 0 ],
+									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-15", 0 ]
 								}
 
@@ -648,6 +662,16 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-150", 0 ],
+									"order" : 1,
+									"source" : [ "obj-151", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 1 ],
+									"midpoints" : [ 19.5, 255.0, 363.0, 255.0, 363.0, 456.0, 90.0, 456.0 ],
+									"order" : 0,
 									"source" : [ "obj-151", 0 ]
 								}
 
@@ -656,6 +680,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-20", 0 ],
 									"source" : [ "obj-19", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-2", 0 ]
 								}
 
 							}
@@ -750,7 +781,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 20.0, 8.166665746139529, 198.999999867813102, 191.833334253860471 ],
+					"patching_rect" : [ 20.0, 8.166665746139529, 198.999999867813102, 221.833334253860471 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 50.0, 198.999999867813102, 178.0 ],
 					"varname" : "bpatcher",
@@ -1498,7 +1529,7 @@
 						"bgcolor" : [ 0.898039215686275, 0.898039215686275, 0.898039215686275, 1.0 ]
 					}
 ,
-					"patching_rect" : [ 20.0, 580.0, 198.999999867813102, 150.0 ],
+					"patching_rect" : [ 20.0, 620.0, 198.999999867813102, 150.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 610.0, 198.999999867813102, 150.0 ],
 					"viewvisibility" : 1
@@ -1977,7 +2008,7 @@
 									"patching_rect" : [ 495.999993432674216, 430.0, 90.0, 17.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 10.000001313465134, 173.0, 135.0, 17.0 ],
-									"text" : "Processed 824 slices"
+									"text" : "Processed 770 slices"
 								}
 
 							}
@@ -2794,7 +2825,7 @@
 						"bgcolor" : [ 0.898039215686275, 0.898039215686275, 0.898039215686275, 1.0 ]
 					}
 ,
-					"patching_rect" : [ 20.0, 370.0, 198.999999867813102, 200.0 ],
+					"patching_rect" : [ 20.0, 410.0, 198.999999867813102, 200.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 400.0, 198.999999867813102, 200.0 ],
 					"viewvisibility" : 1
@@ -3366,7 +3397,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 20.0, 210.0, 198.999999867813102, 150.0 ],
+					"patching_rect" : [ 20.0, 250.0, 198.999999867813102, 150.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 240.0, 198.999999867813102, 150.0 ],
 					"viewvisibility" : 1
@@ -4239,7 +4270,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-91", 0 ],
-					"midpoints" : [ 29.5, 741.0, 486.0, 741.0, 486.0, 15.0, 509.5, 15.0 ],
+					"midpoints" : [ 29.5, 774.0, 486.0, 774.0, 486.0, 15.0, 509.5, 15.0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
