@@ -135,16 +135,16 @@
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
 					"id" : "obj-46",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 925.999970674514771, 489.763428494140612, 273.0, 74.0 ],
+					"patching_rect" : [ 925.999970674514771, 489.763428494140612, 273.0, 57.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 4,
-					"presentation_rect" : [ 547.999970674514771, 478.967743000000041, 251.0, 74.0 ],
-					"text" : "FluCoMa 'Learn'. A website with explanations of algorithms, workflows and deep dives into use cases of FluCoMa from artists.",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 547.999970674514771, 478.967743000000041, 251.0, 57.0 ],
+					"text" : "The home page of FluCoMa. Provides links out to other various websites and has download links for the packages.",
+					"textcolor" : [ 0.0, 0.0, 0.0, 0.3 ]
 				}
 
 			}
