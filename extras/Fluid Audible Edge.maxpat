@@ -496,7 +496,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 925.999970674514771, 430.263428494140612, 129.0, 35.0 ],
-					"presentation_linecount" : 2,
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -865,15 +864,15 @@
 					"fontname" : "Lato",
 					"fontsize" : 14.0,
 					"id" : "obj-3",
-					"linecount" : 8,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 612.333343386650085, 489.763428494140612, 271.0, 141.0 ],
+					"patching_rect" : [ 612.333343386650085, 489.763428494140612, 273.0, 90.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 9,
-					"presentation_rect" : [ 280.999970674514771, 478.967743000000041, 252.0, 158.0 ],
-					"text" : "Sometimes we generate a lot of material in our practices with audio samples and particularly field recordings. FluCoMa offers one way of approaching this problem, by analysing sounds according to their 'novelty'. This patch shows one way in which the measuring of novelty can inform aural exploration.",
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 280.999970674514771, 478.967743000000041, 252.0, 90.0 ],
+					"text" : "The computer is a great tool for automatically chopping up sounds. Let's see how 'novelty' can inform the computer's choices on this matter and segment some sounds for us!",
 					"textcolor" : [ 0.0, 0.0, 0.0, 0.3 ]
 				}
 
